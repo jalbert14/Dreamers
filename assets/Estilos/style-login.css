@@ -1,0 +1,149 @@
+/* ********************* INICIO ******************** */
+/*                       LOGIN                       */
+/* ************************************************* */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap'); /*Quitar al insertar al proyecto*/
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rubik';  /*Quitar al insertar al proyecto*/
+    background-color: #F6E6C2;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* --------- INICIO --------- */
+/* Estilos para el formulario */
+/* -------------------------- */
+    .inicio-secion{
+        z-index: 2;
+        width: 400px;
+        height: 340px;
+        background: #252323;
+        opacity: 0.9;
+        margin: auto;
+        margin-top: 180px;
+        padding: 20px 30px;
+        color: white;
+        border-radius: 10px;
+    }
+
+    .inicio-secion h5{
+        margin: 0;
+        text-align: center;
+        height: 40px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid;
+        font-size: 20px;
+    } 
+
+    .controlador{
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 11px 10px;
+        background: #514e4e;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+
+    .buttons{
+        width: 100%;
+        height: 40px;
+        background: #F9E400;
+        border: none ;
+        margin-bottom: 16px;
+    }
+
+    .inicio-secion p{
+        height: 40px;
+        text-align: center;
+        border-bottom: 1px solid;
+    }
+
+    .inicio-secion a{
+        color: wheat;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .inicio-secion a:hover{
+        text-decoration: underline;
+    }
+/* ---------- FIN ----------- */
+/* Estilos para el formulario */
+/* -------------------------- */
+
+
+
+/* ------ INICIO ----- */
+/* Animación del fondo */
+/* --------------------*/
+    .fondo-animado{
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 120%;
+        height: 120vh;
+    }
+
+    @keyframes rotarIzquierda{
+        100%{
+            transform: rotate(-360deg);
+        }
+    }
+
+
+    @keyframes rotarDerecha{
+        100%{
+                transform: rotate(360deg);
+        }
+    }
+
+    .esquina-inferior-izq-big{
+        animation: rotarIzquierda 65s linear infinite;
+        transform-origin: 40px 600px;
+    }
+
+    .esquina-inferior-izq-little{
+        animation: rotarDerecha 45s linear infinite;
+        transform-origin: 40px 550px;
+    }
+
+    .esquina-superior-der-big{
+        animation: rotarDerecha 65s linear infinite;
+        transform-origin: 750px 80px;
+    }
+
+    .esquina-superior-der-little{
+        animation: rotarIzquierda 35s linear infinite;
+        transform-origin: 750px 80px;
+    }
+
+    .esquina-superior-izq-big{
+        animation: rotarDerecha 85s linear infinite;
+        transform-origin: 55px 30px;
+    }
+
+    .esquina-superior-izq-little{
+        animation: rotarIzquierda 65s linear infinite;
+        transform-origin: 55px 80px;
+    }
+/* ------ INICIO ----- */
+/* Animación del fondo */
+/* --------------------*/
+
+
+/* ********************** FIN ********************** */
+/*                       LOGIN                       */
+/* ************************************************* */
